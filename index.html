@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Example</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+		font-weight: bold;
+      }
+
+      header,
+      footer {
+		display: flex;
+		flex-flow: row wrap;
+		text-align: center;
+        background-color: orange;
+		padding: 10px;
+		justify-content: center;
+      }
+	  
+	  header {
+		background-color: tomato;
+	  }
+	  
+	  footer {
+		background-color: green;
+	  }
+
+      aside {
+        width: 20%;
+        flex: 1;
+        padding: 20px;
+		text-align: center;
+      }
+	  
+	  .left {
+		background-color: yellow;
+	  }
+	  
+	  .right {
+		background-color: pink;
+	  }
+	  
+      main {
+        background-color: aquamarine;
+        flex: 1;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div style="display: flex;">
+      <aside class="left">Aside Left</aside>
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim sapien, pretium quis sem nec, tincidunt tempor eros. Proin malesuada luctus eros eu dapibus. Nulla facilisi. Vivamus bibendum, risus nec sagittis aliquet, nisl diam aliquet magna, vel luctus magna metus sit amet lectus.
+        </p>
+      </main>
+      <aside class="right">Aside Right</aside>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
